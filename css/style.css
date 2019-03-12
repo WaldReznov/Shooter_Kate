@@ -1,0 +1,111 @@
+@font-face{
+  font-family: 'Logo-fonts';
+  src: url(../fonts/SignPainter_HouseScript.ttf);
+  font-weight: 400;
+}
+@font-face{
+  font-family: 'museo-300';
+  src: url(../fonts/MuseoSansCyrl_0.otf);
+  font-weight: 300;
+}
+@font-face{
+  font-family: 'museo-500';
+  src: url(../fonts/MuseoSansCyrl_1.otf);
+  font-weight: 500;
+}
+@font-face{
+  font-family: 'museo-700';
+  src: url(../fonts/MuseoSansCyrl_2.otf);
+  font-weight: 700;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+.header-home{
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: url(../img/header-main.png) center center no-repeat;
+  margin-bottom: 80px;
+}
+nav{
+  height: 70px;
+  background-color: #101115;
+  opacity: 0.7;
+  display: flex;
+  justify-content: center;
+}
+.nav-main{
+  width: 1140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-logo{
+  text-shadow: 0 8px 27px rgba(14, 14, 14, 0.32);
+  color: #f8f8fd;
+  font-family: 'Logo-fonts';
+  font-size: 55px;
+}
+.nav-ul{
+ width: 710px;
+ display: flex;
+ justify-content: space-between;
+ list-style-type: none;
+}
+.nav-ul a{
+  color: #ffffff;
+  font-family: "museo-500";
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.nav-ul li:hover a{
+  text-decoration: underline;
+}
+.header-logo{
+ width: 50%;
+ height: 420px;
+  position: relative;
+  z-index:1;
+  display: flex;
+  justify-content: flex-end;
+}
+.header-logo::after{
+  content: "";
+  background: url(../img/header-brow.png) center right no-repeat;
+  opacity: 0.55;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index:-1;
+}
+.header-logo-text{
+  z-index: 2;
+  margin: 90px 110px 150px 0;
+  width: 480px;
+  height: 190px;
+}
+.header-h1{
+  text-shadow: 0 8px 27px rgba(14, 14, 14, 0.32);
+  color: #f8f8fd;
+  font-family: 'Logo-fonts';
+  font-size: 150px;
+  font-weight: 400;
+}
+.header-h2{
+  font-family: 'museo-700';
+  text-shadow: 0 8px 27px rgba(14, 14, 14, 0.32);
+  color: #f9f9fd;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33px;
+  text-transform: uppercase;
+}

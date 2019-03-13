@@ -4,6 +4,7 @@ link();
 function link(){
   document.getElementById('burger').classList.toggle('menu-link-active');
   document.getElementById('nav-ul').classList.toggle('nav-ul-link');
+  document.getElementById("body").classList.toggle("scroll");
 }
 var buttonClick = document.getElementsByClassName('button-modal');
 for (i=0; i< buttonClick.length; i++)
